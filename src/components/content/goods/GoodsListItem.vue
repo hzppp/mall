@@ -1,6 +1,6 @@
 <template>
   <div class="goods-item" @click="itemClick">
-    <img v-lazy="getImg" alt="" @load="imgLoad" /><!--@load是vue本来就有的的监听事件-->
+    <img :src="getImg" alt="" @load="imgLoad" /><!--@load是vue本来就有的的监听事件-->
     <div class="goods-info">
       <p>{{ goodsItem.title }}</p>
       <span class="price">{{ goodsItem.price }}</span>
